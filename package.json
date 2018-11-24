@@ -1,0 +1,29 @@
+{
+  "name": "steengen-wp",
+  "version": "0.0.1",
+  "description": "Generator for wordpress project",
+  "main": "./bin/index.js",
+  "preferGlobal": true,
+  "bin": {
+    "steegen-wp": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Steenify/steengen-wp"
+  },
+  "homepage": "https://github.com/Steenify/steengen-wp",
+  "scripts": {},
+  "keywords": [
+    "generate",
+    "wordpress",
+    "steengen-wp",
+    "steenify"
+  ],
+  "author": "Andy Duy Pham",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "commander": "^2.15.1",
+    "ncp": "^2.0.0"
+  }
+}
