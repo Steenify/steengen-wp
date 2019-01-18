@@ -1,0 +1,39 @@
+.toast_modal {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: none;
+  }
+
+  .modal-body {
+    text-align: center;
+    color: $white;
+    background: $black;
+  }
+
+  &__message {
+    white-space: nowrap;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    margin-bottom: em(8px, 14px);
+  }
+
+  &.success {
+    .modal-body {
+      background-color: rgb(26, 149, 95);
+    }
+  }
+
+  &.fail {
+    .modal-body {
+      background-color: rgb(221, 103, 5);
+    }
+  }
+
+}

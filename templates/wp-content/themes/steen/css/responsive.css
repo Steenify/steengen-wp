@@ -1,0 +1,226 @@
+.select-items div, .select-selected {
+    padding: 6px 16px;
+}
+.morph-menu-button-four,
+.morph-menu-button-four-middle,
+.morph-main-menu-button {
+    display: none;
+}
+.morph-by-bonfire .current-menu-item a{
+    color: #eeee22
+}
+@media only screen and (max-width: 1470px) {
+
+}
+@media only screen and (max-width: 1400px) {
+body,
+.container {
+    overflow-x: hidden;
+}
+}
+@media only screen and (min-width: 1151px) {
+	
+}
+@media only screen and (max-width: 1150px) {
+.tintuc_big_col2.max-height.max-height-ipad {
+    background: #fff;
+}
+
+
+}
+
+
+@media screen and (max-width: 959px) {
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+}
+@media only screen and (max-width: 850px) {
+.fillter_container form div.input_search_main,
+    .fillter_container form > div {
+    width: 25%;
+    max-width: 100%
+}
+
+.content_footer_container > div > div.vc_col-sm-3 {
+    width: 50%;
+    text-align: center;
+        float: left;
+}
+.morph-menu-button-four,
+.morph-main-menu-button,
+.morph-menu-button-four-middle {
+    display: block;
+}
+.menu-wrapper{
+    display: none
+}
+.title_bg_blue{
+    font-size: 24px
+}
+.icon_1, .icon_2 {
+    min-height: 35px;
+    background-size: auto 100%;
+}
+.xemthem_main a {
+    padding: 10px 30px;
+    font-size: 22px;
+}
+
+
+}
+@media only screen and (max-width: 769px) {
+.vc_col-sm-9 {
+    width: 100% !important;
+}
+.description {
+    height: 41px;
+}
+.wpb_column.vc_column_container.wpb_animate_when_almost_visible.wpb_slideInRight.slideInRight.wpb_column.vc_column_container.vc_col-sm-3.animated.wpb_start_animation {
+    margin-top: 20px;
+}
+.tintuc_main .img_tintuc_big img,
+.tintuc_main .content_tintuc_big,
+.tintuc_main .img_tintuc_big{
+    width: 100%
+}
+.tintuc_main .tintuc_big_col2.max-height div.img_top{
+    display: none
+}
+.tintuc_main .vc_col-sm-3{
+    width: 100% !important;
+}
+.product_main.vc_col-sm-3 {
+    width: 50%;
+    float: left;
+}
+.group_4_main .product_main.vc_col-sm-3:nth-child(even){
+    border-right: 0
+}
+.xemthem_main a {
+    padding: 10px 30px;
+    font-size: 22px;
+}
+
+footer .vc_col-sm-1\/5 .alignnone.size-full.wp-image-24 {
+    margin-top: 0px;
+}
+
+.hader_content_filter_main .group_filter_6_main .group_filter_6 {
+    background-size: 40px;
+}
+.hader_content_filter_main .group_filter_6_main .group_filter_6 > div {
+    padding-left: 50px;
+    padding-right: 5px;
+}
+.content_single_product_container .vc_col-sm-6 {
+    width: 100%;
+        display: inline-block;
+}
+.title_product {
+    margin-top: 20px;
+}
+
+
+.blog_container .vc_col-sm-8 {
+    width: 100%;
+}
+.blog_container .vc_col-sm-4 {
+    width: 100%;
+}
+.widget_container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50px;
+    max-width: 455px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.widget_single_right_container,
+.content_single_container_left {
+    width: 100%;
+}
+
+
+
+}
+@media only screen and (max-width: 735px) {
+    .fillter_container form div.input_search_main,
+    .fillter_container form > div {
+        width: 100%;
+        border-top: 1px solid
+    }
+    .title_bg_blue{
+        font-size: 20px
+    }
+    .xemthem_main a {
+        padding: 10px 30px;
+        font-size: 22px;
+    }
+
+
+}
+@media only screen and (max-width: 550px) {
+    .title_bg_blue{
+        background: transparent
+    }
+    .title_bg_blue.bg_blue_left {
+    text-align: center;
+    padding-left: 0;
+}
+}
+@media only screen and (max-width: 520px) {
+.hader_content_filter_main .group_filter_6_main .group_filter_6 {
+    width: 33.36%;
+    border-bottom: 1px solid #1770A6;
+}
+
+
+}
+@media only screen and (max-width: 450px) {
+.next_back_main {
+    top: 95px;
+}
+.title_splq {
+    font-size: 22px;
+    text-align: center;
+}
+}
+@media only screen and (max-width: 410px) {
+.product_main.vc_col-sm-3 {
+    width: 100%;
+    float: left;
+    border-right: 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+ul.col_3,
+ul.col_3_border {
+
+    column-count: 1;
+}
+ul.col_3 li,
+ul.col_3_border li{
+    width: 100%;
+}
+.blog_container .tintuc_right_main,
+.blog_container .tintuc_left_main {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+}
+@media only screen and (max-width: 375px) {
+    .hader_content_filter_main .group_filter_6_main .group_filter_6 {
+        width: 50%;
+    }
+    .hader_content_filter_main .group_filter_6_main .group_filter_6:nth-child(even) {
+        border-right: 0;
+    }
+
+}

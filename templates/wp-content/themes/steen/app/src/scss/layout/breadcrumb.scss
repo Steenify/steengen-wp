@@ -1,0 +1,21 @@
+.steenify-breadcrumb {
+  padding-top: 24px;
+
+  .breadcrumb {
+    background: $nocolor;
+    padding-left: 0;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: auto;
+
+    &-item {
+      a {
+        color: $text_color;
+      }
+
+      &.active {
+        color: $main_color;
+      }
+    }
+  }
+}

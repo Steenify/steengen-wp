@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="dist/news.css" />
+</head>
+
+<body>
+  <% include ../partials/header %>
+  <h1 class="sr-only">About Oexpo</h1>
+  <main class="news__page">
+    <div class="news__banner page__title">
+      <img class="w-100" src="/public/img/news__banner.jpg" alt="news__banner">
+      <div class="page__title__wrapper">
+        <div class="container">
+          <h1 class="page__title__text">
+            Tin Tức
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="news__nav oexpo__nav">
+      <div class="container">
+        <ul class="news__nav__list oexpo__nav__list">
+          <li class="news__nav__item oexpo__nav__item">
+            <a href="/news" title="news__nav__item">
+              sản phẩm
+            </a>
+          </li>
+          <li class="news__nav__item oexpo__nav__item active">
+            <a href="/news" title="news__nav__item">
+              xu hướng
+            </a>
+          </li>
+          <li class="news__nav__item oexpo__nav__item">
+            <a href="/news" title="news__nav__item">
+              công ty
+            </a>
+          </li>
+          <li class="news__nav__item oexpo__nav__item">
+            <a href="/news" title="news__nav__item">
+              công đồng
+            </a>
+          </li>
+          <li class="news__nav__item oexpo__nav__item">
+            <a href="/news" title="news__nav__item">
+              tin tức
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="news__content container">
+      <div class="row">
+
+        <div class="col-lg-9">
+          <div class="news__list">
+
+            <div class="news__item news__item--main">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-4 col-lg-6">
+                  <div class="news__item__img">
+                    <a href="/article" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
+                      <img src="/public/img/news__item__img.jpg" alt="news__item__img">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-8 col-lg-6">
+                  <div class="news__item__info">
+                    <a href="/article" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
+                      <h5 class="news__item__name">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </h5>
+                    </a>
+                    <p class="news__item__des">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum fermentum fringilla.
+                      Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum fermentum fringilla...
+                    </p>
+                    <time class="news__item__date">15 Aug 2018 </time>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="news__item ">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-4">
+                  <div class="news__item__img">
+                    <img src="/public/img/news__item__img.jpg" alt="news__item__img">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="news__item__info">
+                    <h5 class="news__item__name">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </h5>
+                    <p class="news__item__des">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum fermentum fringilla.
+                      Lorem
+                      ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum fermentum fringilla...
+                    </p>
+                    <time class="news__item__date">15 Aug 2018 </time>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- page pagination -->
+          <nav class="steen-pagination text-center">
+            <ul>
+              <li class="steen-pagination__item steen-pagination__prev">
+                <a href="#" title="pagination__prev">
+                  <svg width="15" height="8" aria-hidden="true" title="Store Locator">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="steen-pagination__item">
+                <a href="#">1</a>
+              </li>
+              <li class="steen-pagination__item active">
+                <a href="#">2</a>
+              </li>
+              <li class="steen-pagination__item">
+                <a href="#">3</a>
+              </li>
+              <li class="steen-pagination__item steen-pagination__next">
+                <a href="#" title="pagination__next">
+                  <svg width="15" height="8" aria-hidden="true" title="Store Locator">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- end page pagination -->
+        </div>
+        <div class="col-lg-3">
+          <div class="news__sidebar">
+            <h4 class="news__sidebar__title">
+              Tin tức liên quan
+            </h4>
+
+            <div class="news__sidebar__list">
+
+              <div class="news__sidebar__item">
+                <div class="news__sidebar__img">
+                  <img src="/public/img/news__item__img.jpg" alt="news__sidebar__img">
+                </div>
+                <div class="news__sidebar__info">
+                  <h5 class="news__sidebar__name">
+                    Lorem Ipsum is simply dummy text of the printing
+                  </h5>
+                  <time class="news__sidebar__date">15 Aug 2018 </time>
+                </div>
+              </div>
+
+              <div class="news__sidebar__item">
+                <div class="news__sidebar__img">
+                  <img src="/public/img/news__item__img.jpg" alt="news__sidebar__img">
+                </div>
+                <div class="news__sidebar__info">
+                  <h5 class="news__sidebar__name">
+                    Lorem Ipsum is simply dummy text of the printing
+                  </h5>
+                  <time class="news__sidebar__date">15 Aug 2018 </time>
+                </div>
+              </div>
+
+              <div class="news__sidebar__item">
+                <div class="news__sidebar__img">
+                  <img src="/public/img/news__item__img.jpg" alt="news__sidebar__img">
+                </div>
+                <div class="news__sidebar__info">
+                  <h5 class="news__sidebar__name">
+                    Lorem Ipsum is simply dummy text of the printing
+                  </h5>
+                  <time class="news__sidebar__date">15 Aug 2018 </time>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+  <% include ../partials/footer %>
+  <script type="text/javascript" src="dist/news.js"></script>
+</body>
+
+</html>

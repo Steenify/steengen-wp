@@ -1,0 +1,269 @@
+.mainbanner {
+  &__slider {
+    position: relative;
+    z-index: 1;
+
+    &__wrapper {
+      opacity: 0;
+
+      &.slick-initialized {
+        opacity: 1;
+      }
+    }
+
+    &__bg {
+      position: relative;
+
+      img,
+      video {
+        width: 100%;
+      }
+
+      &__arrow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+
+    &__content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+
+
+        button {
+          font-size: 0;
+          width: 10px;
+          height: 10px;
+          border: 1px solid $white;
+          box-sizing: border-box;
+          border-radius: 100%;
+          background: $nocolor;
+          margin: 5px;
+        }
+
+        .slick-active {
+          button {
+            background: $white;
+          }
+        }
+
+        @include max-sm() {
+          margin-bottom: 50px;
+        }
+
+      }
+    }
+
+    &__item {
+      .content {
+        margin: auto;
+        font-size: em(54px);
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 800;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        max-width: 590px;
+        line-height: 1.3;
+
+        img {
+          display: inline;
+        }
+
+        @include max-ml() {
+          font-size: em(40px);
+
+          img {
+            width: 155px;
+          }
+        }
+
+        @include max-md() {
+          font-size: em(32px);
+
+          img {
+            width: 125px;
+          }
+        }
+
+        @include max-xs() {
+          font-size: em(24px);
+
+          img {
+            width: 100px;
+          }
+        }
+
+      }
+    }
+
+    &__down {
+      width: 36px;
+      height: 36px;
+      border: 3px solid $white;
+      background: $nocolor;
+      position: absolute;
+      bottom: 175px;
+      left: 50%;
+      margin-left: -18px;
+      border-radius: 100%;
+      color: $white;
+      transition: all 0.3s ease-in-out 0s;
+      animation: bounce 2s infinite;
+
+      &:hover {
+        color: $main_color;
+      }
+
+      @media (max-width: 1300px) {
+        bottom: 100px;
+      }
+
+      @include max-ml() {
+        bottom: 70px;
+      }
+
+      @include max-lg() {
+        bottom: 50px;
+
+      }
+
+      @include max-md() {
+        bottom: 30px;
+        animation: none;
+      }
+
+      @include max-sm() {
+        bottom: 20px;
+        animation: none;
+      }
+
+      @include max-xs() {
+        bottom: 15px;
+        width: 30px;
+        height: 30px;
+      }
+
+
+
+    }
+  }
+
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    background: $white;
+
+    &__item {
+      width: 50%;
+      position: relative;
+      min-height: 486px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &__content {
+        opacity: 0;
+        text-align: center;
+      }
+
+      @media (max-width: 991px) {
+        width: 100%;
+        min-height: 300px;
+
+        &.mainbanner__products__left {
+          background: none !important;
+        }
+
+        &.mainbanner__products__right {
+          background-image: url(/wp-content/themes/oexpo/app/public/img/mainbanner__products__left.jpg) !important;
+          background-position: bottom left;
+          background-size: contain;
+        }
+      }
+
+      @media (max-width: 750px) {
+
+
+        &.mainbanner__products__left {
+          padding-right: 50px;
+        }
+
+        &.mainbanner__products__right {
+          padding-left: 50px;
+        }
+      }
+
+      @media (max-width: 550px) {
+        min-height: initial;
+      }
+
+    }
+
+    &__left {
+      text-align: right;
+      background: url(/public/img/mainbanner__products__left.jpg) no-repeat;
+      background-position: left bottom;
+      background-size: contain;
+    }
+
+    &__right {
+      text-align: left;
+      background: url(/public/img/mainbanner__products__right.jpg) no-repeat;
+      background-position: right bottom;
+      justify-content: flex-end;
+      background-size: contain;
+
+      .mainbanner__products__item {
+        &__name {
+          right: 0;
+          left: auto;
+        }
+
+        &__img {
+          right: 400px;
+          left: auto;
+        }
+      }
+
+    }
+
+
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}

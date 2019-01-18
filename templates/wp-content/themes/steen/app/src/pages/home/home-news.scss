@@ -1,0 +1,118 @@
+$home_news_border: #003C77;
+$home_news_text: #333333;
+// $home_news_bg: $white;
+
+.home_news {
+  font-size: $font_size_base;
+  padding-bottom: em(70);
+  padding-top: em(70);
+  // background: $home_news_bg;
+
+  &__title {
+    font-weight: bold;
+    line-height: normal;
+    font-size: em(30px);
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: em(20px);
+  }
+
+  &__item {
+    position: relative;
+    height: 365px;
+    border-top: 3px solid $home_news_border;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 11px rgba(60, 60, 60, 0.25);
+
+      .home_news__item__des {
+        opacity: 1;
+      }
+
+      .home_news__item__info {
+        max-height: 331px;
+      }
+    }
+
+    &__img {
+      height: 100%;
+
+      img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background: $white;
+      padding: em(30px);
+      transition: all 1s cubic-bezier(0.43, 0.195, 0.02, 1);
+      max-height: 140px;
+    }
+
+    &__title {
+      font-weight: bold;
+      font-size: em(18px);
+      text-transform: uppercase;
+      color: $home_news_text;
+      margin-bottom: em(15px, 18px);
+    }
+
+    &__des {
+      font-size: em(14px);
+      color: $home_news_text;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 1s cubic-bezier(0.43, 0.195, 0.02, 1);
+    }
+
+    &__btn {
+      position: absolute;
+      bottom: em(20px);
+      left: em(30px);
+      color: $black;
+    }
+
+    &__wrapper {
+      padding: 0 10px;
+    }
+
+  }
+
+  &__content {
+    opacity: 0;
+
+    &.slick-initialized {
+      opacity: 1;
+    }
+
+    .slick-dots {
+      button {
+        border-color: $black;
+      }
+
+      .slick-active button {
+        background: $black;
+      }
+    }
+  }
+
+  @include max-sm() {
+    font-size: $font_size_xm;
+  }
+
+  @include max-xl() {
+    .home_news__item__info {
+      padding: em(30px) em(20px);
+    }
+  }
+}

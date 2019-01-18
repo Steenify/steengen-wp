@@ -1,0 +1,23 @@
+@import '../../scss/variable.scss';
+@import './about-info.scss';
+@import './about-disan.scss';
+@import './about-products.scss';
+@import './about-numbers.scss';
+
+.about {
+
+  &__page {
+    background: url(/public/img/about__footer_number_bg.jpg) no-repeat;
+    background-position: bottom center;
+    background-color: $white;
+    background-size: 100%;
+  }
+
+  &__banner {
+    .page__title {
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.sellect_control {
+  border: 1px solid $black;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  font-size: $font_size_base;
+  color: #333333;
+  transform: translate3d(0, -1px, 0);
+
+  &__list {
+    border-radius: 0;
+    height: em(40px, $font_size_base);
+    border: none;
+    background: $nocolor;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $nocolor;
+    }
+  }
+
+  &__btn {
+    color: $white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background: $black;
+    width: em(49px);
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,53 @@
+.auto_complete {
+  position: relative;
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 234;
+
+
+  }
+
+  &__item {
+    &.active {
+      font-weight: bold;
+      color: $main_color;
+
+      .auto_complete__link {
+        color: $main_color;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background: $white;
+    color: $text_color;
+  }
+
+  &__color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: $black;
+  }
+
+  &__name {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__cat {
+    flex: 1;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

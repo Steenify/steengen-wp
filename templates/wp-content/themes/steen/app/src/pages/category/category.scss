@@ -1,0 +1,63 @@
+@import '../../scss/variable.scss';
+
+$category_bg: #F7F7F7;
+
+.category {
+  &__page {
+    font-size: $font_size_base;
+    padding-bottom: 70px;
+    background: url(/public/img/category__bottom__bg.png) no-repeat;
+    background-color: $category_bg;
+    background-position: bottom right;
+  }
+
+  &__nav {
+    background: $white;
+
+    .oexpo__nav__list {
+      justify-content: center;
+    }
+
+    .oexpo__nav__item {
+      margin-right: em(20px);
+      margin-left: em(20px);
+    }
+  }
+
+  &__list {
+    padding-top: em(70px);
+    margin-bottom: em(70px);
+
+
+    .product-item {
+      transform: translate3d(0, -1px, 0);
+
+      &:hover {
+        box-shadow: none;
+
+        .product-item__title,
+        .product-item__des {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  &__banner {
+    .page__title__text {
+      margin-top: em(100px, 54px);
+    }
+  }
+
+  @include max-xl() {
+    &__nav {
+      .oexpo__nav__list {
+        justify-content: flex-start;
+      }
+
+      .oexpo__nav__item {
+        margin-left: 0;
+      }
+    }
+  }
+}

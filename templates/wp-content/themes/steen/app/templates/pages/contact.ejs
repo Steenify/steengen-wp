@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../partials/head %>
+  <link rel="stylesheet" href="dist/contact.css" />
+</head>
+
+<body class="contact__body">
+  <% include ../partials/header %>
+  <main class="contact__page">
+    <section class="contact__map" data-mapview data-icon="/public/img/map-icon.svg">
+      <div class="contact__controls">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <h1 class="contact__controls__title">
+                Tìm Đại Lý Gần Nhất
+              </h1>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+
+                <div class="col-md-6">
+                  <div class="sellect_control">
+                    <select name="provinces" id="provinces" data-provinces class="form-control sellect_control__list"></select>
+                    <label for="provinces" class="sellect_control__btn">
+                      <span class="sr-only">provinces</span>
+                      <svg aria-hidden="true" title="Search" width="15" height="13">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sellect_icon"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="sellect_control">
+                    <select name="provinces" id="districts" data-districts class="form-control sellect_control__list"></select>
+                    <label for="districts" class="sellect_control__btn">
+                      <span class="sr-only">districts</span>
+                      <svg aria-hidden="true" title="Search" width="15" height="13">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sellect_icon"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__map__view">
+        <div class="contact__map__list">
+          <h5 class="contact__map__title">
+            tất cả các đại lý
+          </h5>
+          <ul id="listStore"></ul>
+        </div>
+
+        <div data-canvas id="map_canvas"></div>
+      </div>
+    </section>
+
+    <section class="about__disan">
+      <div class="about__disan__item about__disan__bg">
+        <span class="about__disan__bg__gradient"></span>
+      </div>
+      <div class="about__disan__item about__disan__info">
+        <h4>
+          <img src="/public/img/about__disan__info.svg" alt="about__disan__info" />
+        </h4>
+      </div>
+    </section>
+    <section class="contact__content">
+      <div class="container">
+        <h3 class="contact__title">LIÊN HỆ VỚI OEXPO </h3>
+        <div class="contact__form contact_form">
+          <div class="row">
+            <div class="col-md-6">
+              <input name="ho" placeholder="Họ" type="text" class="form-control contact_form__input">
+            </div>
+            <div class="col-md-6">
+              <input name="ten" placeholder="Tên" type="text" class="form-control contact_form__input">
+            </div>
+            <div class="col-md-6">
+              <input name="email" placeholder="Email" type="email" class="form-control contact_form__input">
+            </div>
+            <div class="col-md-6">
+              <input name="number" placeholder="Số điện thoại" type="text" class="form-control contact_form__input">
+            </div>
+            <div class="col-12">
+              <input name="address" placeholder="Địa chỉ" type="text" class="form-control contact_form__input">
+            </div>
+            <div class="col-12">
+              <textarea rows="6" name="message" placeholder="Nội dung liên hệ" class="form-control contact_form__input"></textarea>
+            </div>
+
+            <div class="col-12">
+              <button class="oexpo-btn black contact__btn">
+                Đăng ký
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <% include ../partials/footer %>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places&language=vi-VN&key=AIzaSyBdwtJZ78s0i-9X641rAyaBtodDGRxPCr0"
+    type="text/javascript"></script>
+  <script type="text/javascript" src="dist/contact.js"></script>
+</body>
+
+</html>

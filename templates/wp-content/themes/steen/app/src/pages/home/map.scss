@@ -1,0 +1,101 @@
+$home_map_search: #396DA0;
+$home_map_bg: $white;
+
+.home_map {
+  font-size: $font_size_base;
+  position: relative;
+  background: $home_map_bg;
+
+  #map_canvas {
+    height: 624px;
+  }
+
+  &__form {
+    position: absolute;
+    width: 388px;
+    left: 119px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    z-index: 12;
+  }
+
+  &__search {
+    background: $home_map_search;
+    padding: 20px;
+
+    h3 {
+      font-weight: bold;
+      line-height: normal;
+      font-size: em(18px);
+      text-transform: uppercase;
+      color: $white;
+      margin-bottom: 10px;
+    }
+
+    .form-control {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    .form-group {
+      position: relative;
+
+      svg {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -4px;
+      }
+    }
+  }
+
+  &__results {
+    padding: 20px;
+    padding-left: 50px;
+    max-height: 320px;
+    overflow: auto;
+
+    .list_store_item {
+      font-weight: 500;
+      line-height: em(20px);
+      font-size: em(14px);
+      letter-spacing: 0.02em;
+      color: $black;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: em(10px);
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:before {
+        content: "•";
+        color: $black;
+        position: absolute;
+        left: -20px;
+        font-size: 25px;
+      }
+    }
+  }
+
+  @include max-ml() {
+    padding-top: 20px;
+
+    .home_map__form {
+      position: static;
+      padding: 0 16px;
+      transform: none;
+      width: 100%;
+      box-shadow: none;
+    }
+
+    .home_map__results {
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+}

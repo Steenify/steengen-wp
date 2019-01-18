@@ -1,0 +1,88 @@
+$about__products: $black;
+$about__products__title: #313131;
+
+.about__products {
+  font-size: $font_size_base;
+
+  &__title {
+    font-weight: 500;
+    line-height: em(18px, 13px);
+    font-size: em(13px);
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $about__products__title;
+    max-width: 796px;
+    margin: auto;
+    margin-top: em(70px, 13px);
+    margin-bottom: em(50px, 13px);
+  }
+
+  &__img {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    &--cody {
+      background-image: url(/public/img/about_product_1_bg.jpg);
+    }
+
+    &--zoco {
+      background-image: url(/public/img/about_product_2_bg.jpg);
+    }
+
+    &--xix {
+      background-image: url(/public/img/about_product_3_bg.jpg);
+    }
+
+  }
+
+  &__info {
+    max-width: 500px;
+  }
+
+  &__name {
+    margin-bottom: em(20px);
+  }
+
+  &__des {
+    line-height: em(19px);
+    font-size: em(14px);
+    letter-spacing: 0.05em;
+    color: $about__products;
+  }
+
+  @include max-md () {
+    // font-size: $font_size_xm;
+
+    &__title {
+      // font-size: em(14px, $font_size_xm);
+      margin-top: em(30px, 14px);
+      margin-bottom: em(30px, 14px);
+    }
+
+    &__des {
+      text-align: center;
+      // font-size: em(14px, $font_size_xm);
+    }
+
+    &__name {
+      text-align: center
+    }
+
+    &__img {
+      margin-bottom: em(15px);
+    }
+
+  }
+
+  @include max-sm () {
+    &__img {
+      order: -1;
+      max-width: 350px;
+      margin: auto;
+      margin-bottom: em(15px);
+    }
+
+  }
+}

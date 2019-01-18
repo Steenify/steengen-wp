@@ -1,6 +1,11 @@
-<?php get_header(); ?>
+<?php
 
-<h1>Content here</h1>
-<!-- end block blog -->
-<?php wp_enqueue_script('home-bundle', get_template_directory_uri() . '/app/src/dist/home.bundle.js', [], 1.0, true); ?>
-<?php get_footer(); ?>
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+get_header(); ?>
+
+<?php get_footer()?>

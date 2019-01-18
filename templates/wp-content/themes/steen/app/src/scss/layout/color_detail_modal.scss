@@ -1,0 +1,59 @@
+#collection_detail__modal {
+  font-size: $font_size_base;
+  padding: 0 !important;
+
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: none;
+  }
+
+  .modal-body {
+    text-align: center;
+    color: $white;
+    background: $black;
+
+    .color {
+
+      &__main {
+        white-space: nowrap;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        margin-bottom: em(8px, 14px);
+      }
+
+      &__name {
+        white-space: nowrap;
+        line-height: em(16px, 12px);
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+
+      &__code {
+        white-space: nowrap;
+        font-weight: normal;
+        line-height: em(16px, 12px);
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+
+  &.dark {
+    .modal-body {
+      color: $white;
+    }
+  }
+
+  &.bright {
+    .modal-body {
+      color: $black;
+    }
+  }
+}

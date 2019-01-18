@@ -1,0 +1,48 @@
+@import '../variable.scss';
+$footer_menu_link: #8F8F8F;
+
+// footer main
+.footer_oexpo {
+  font-size: $font_size_base;
+  padding: 16px 0;
+  background: $black;
+  padding: 50px 0;
+
+  &__logo {
+    width: 101.93px;
+    height: 24px;
+    margin-bottom: 15px;
+  }
+
+  &__copy_right {
+    font-size: em(13px);
+    color: $white;
+    max-width: 250px;
+    margin-bottom: em(15px);
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: em(20px);
+    text-align: left;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: em(16px, 20px);
+  }
+
+  &__item {
+    a {
+      font-size: em(13px);
+      color: $white;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-wrap: nowrap;
+
+    li {
+      margin: 0 10px;
+    }
+  }
+}
